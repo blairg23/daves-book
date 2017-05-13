@@ -1,0 +1,174 @@
+\documentclass[oneside]{book}
+\usepackage{tocbibind}
+\usepackage{tocloft}
+\usepackage{lipsum}
+\usepackage{graphicx} %for including graphics and figures
+\usepackage{caption} %for captions outside of floats
+
+%\usepackage{fancyhdr} %%For headers/footers\
+%\pagestyle{fancy} %%For fancy headers
+
+\AtBeginDocument{%
+  \renewcommand\contentsname{Table of Contents}
+}
+
+% Centered title for ToC, LoF, LoT
+\renewcommand{\cfttoctitlefont}{\hfill\Huge\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\Huge\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\Huge\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+
+% Leaders for chapter entries
+\renewcommand\cftchapdotsep{\cftdotsep}
+
+% Add space to account for new chapter numbering schema
+\renewcommand\cftchapnumwidth{3em}
+\renewcommand\cftsecindent{3em}
+
+% Redefine representation for chapter (and section) counters
+\renewcommand\thechapter{\arabic{chapter}}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
+
+%% \fancyhf{}
+
+\begin{document}
+%%Title
+%\fancyhead[L]{If There's A God, HELP!} %%Header
+%\fancyfoot[L]{David A. Allan} %Footer
+%\rhead{}
+%\renewcommand{\footrulewidth}{1pt}
+%\fancyhead[R]{\thepage}
+%
+%%Fix headers on Table of Contents and List of Figures:
+%\fancypagestyle{plain}{
+%	\fancyhead{}
+%	\fancyfoot{}
+%	\fancyhead[L]{If There's a God, HELP!} %%Header
+%	\fancyfoot[L]{David A. Allan} %Footer
+%	\rhead{}
+%	\renewcommand{\footrulewidth}{1pt}
+%}
+
+\frontmatter
+\title{If There's a God, HELP!\\
+	\large Facing Trials with God
+}
+\author{David A. Allan}
+\maketitle
+\chapter{IMPORTANT NOTE}
+I have donated this book to the church where we serve in Mexico; therefore, I am not charging for it. Instead, I am asking for donations to be sent to LaFuente Riviera at the addresses below. They will provide a tax-deductible receipt for any amount over \$25.00 (however, they will gladly accept any donation amount). For online giving go to Paypal (US). You could also personally give me contributions and I will make sure it gets to LaFuente (make checks out to LaFuente Riviera). Thank you for any help you can give this ministry!\\
+
+\begin{center}
+\underline{\textbf{In the United States}}\\
+LaFuente Riviera\\
+10924 Oro Vista Avenue\\
+Sunland, CA. 91040-2025\\
+\
+\
+
+\underline{\textbf{In Canada}}\\
+La Fuente Ministries\\
+c/o The Great Commission Foundation\\
+P.O. Box 14006\\
+Abbotsford, BC, Canada V2T0B4
+\
+\
+Include a note that these funds are for LaFuente Riviera.\\
+(If you do not need the tax benefits of Canadian giving, you can use PayPal in the USA for easier giving.)
+\end{center}
+\textbf{License pending--all material sole property of David A Allan and LaFuente Riviera.}
+\chapter{Acknowledgements}
+\lipsum[1]
+\clearpage
+\tableofcontents
+\clearpage
+\mainmatter
+% Chapter 1
+\chapter{Out of Control--HELP!}
+
+% Chapter 2
+\chapter{My Search for Purpose}
+\section{Flies in the Ointment}
+% Chapter 3
+\chapter{God's Plan or My Plan--Why the Struggle?}
+\section{Putting the Training Wheels Back On}
+% Chapter 4
+\chapter{A Plan for the Future--God Spoke through a Deer!}
+\section{The Meeting Place, Exodus 33:7-11}
+\section{You Want My Airplane too--Why Not?}
+% Chapter 5
+\chapter{What's My Place in His Kingdom?}
+\section{God's Little Lambs}
+% Chapter 6
+\chapter{Keeping the Focus}
+\section{You Want Me to Fly Again?}
+% Chapter 7
+\chapter{Facing Family Hurts}
+\section{God's Warning to Pay Attention to Family}
+\section{Facing an Evan Bigger Family Tragedy}
+\section{What's Next?}
+% Chapter 8
+\chapter{Job's Trial on Our Farm}
+\section{Life Leading Into the Trial}
+\section{A Prophetic Word with a Twist}
+\section{Job's Trial}
+\section{Round 1 of My Job Trial}
+\section{Round 2}
+\section{Round 3}
+\section{The Meeting Place Outside the Camp--Exodus 33:7-11}
+% Chapter 9
+\chapter{The Gates of Hell Will Not Prevail}
+\section{The Call to Ministry--Emotional Healing and Deliverance}
+% Chapter 10
+\chapter{Growing in Authority}
+% Chapter 11
+\chapter{The Development of Encounters Ministry}
+\section{On Our Way to Rehoboth (Isaac's Third Well)}
+% Chapter 12
+\chapter{Packing our Bags}
+\section{Reflections}
+\section{Family Healing at the Farm--Kari}
+\section{Breaking a Generational Stronghold-Chad}
+\section{Take Nothing With You}
+% Chapter 13
+\chapter{Becoming More Effective}
+\section{Encounters in the Streets}
+% Chapter 14
+\chapter{Discovering My True Identity--Battle Over Sonship}
+\section{My True Identity Encounter in Denver}
+\section{The Garden and the Gardener--Another Encounter}
+\section{Meet My Gardener}
+% Chapter 15
+\chapter{Facing the Unexpected}
+\section{Back to Homeland Canada}
+\section{God Goes Before Us}
+\section{Never Say Never}
+\section{A Dream for Mexico}
+\section{Putting the Dream on Hold}
+% Chapter 16
+\chapter{Life After Death}
+\section{Doorway to a New Season}
+\section{God's Will and God's Timing}
+\section{Back to the U.S.A.}
+\section{Settling Into the Flathead Valley, Montana 2011-12}
+\section{Provision for the Vision}
+% Chapter 17
+\chapter{God said, "This One's on Me"}
+\section*{Round 1}
+\lipsum[1]
+\section{Round 2}
+\lipsum[1]
+\section{Round 3}
+\section{Concluding Remarks}
+
+\backmatter
+\clearpage
+
+\chapter*{Some Testimonies from the Encounters Ministry}
+\chapter*{APPENDIX}
+\addtocontents{toc}{\protect\addvspace{10pt}}
+\addtocontents{toc}{\textbf{APPENDIX}}
+
+\end{document}

@@ -4,7 +4,7 @@
 \usepackage{lipsum}
 \usepackage{graphicx} %for including graphics and figures
 \usepackage{caption} %for captions outside of floats
-
+%\usepackage{savetrees}
 %\usepackage{fancyhdr} %%For headers/footers\
 %\pagestyle{fancy} %%For fancy headers
 
@@ -32,6 +32,9 @@
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 
 %% \fancyhf{}
+
+%% Remove section numbering, but leave in TOC:
+\setcounter{secnumdepth}{-2}
 
 \begin{document}
 %%Title

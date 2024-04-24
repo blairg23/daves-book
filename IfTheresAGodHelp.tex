@@ -5,9 +5,11 @@
 \usepackage{graphicx} %for including graphics and figures
 \usepackage{caption} %for captions outside of floats
 \usepackage{appendix}
+
 %\usepackage{savetrees}
-%\usepackage{fancyhdr} %%For headers/footers\
+\usepackage{fancyhdr} %%For headers/footers\
 %\pagestyle{fancy} %%For fancy headers
+\usepackage{titlesec}
 
 %\renewcommand{\rmdefault}{phv} % Arial
 %\renewcommand{\sfdefault}{phv} % Arial
@@ -16,7 +18,7 @@
 \usepackage{parskip}
 
 % Spacing
-\usepackage{geometry}
+\usepackage[paperheight=8.5in,paperwidth=5.5in,heightrounded]{geometry}
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -31,6 +33,12 @@
 \usepackage{titlepic}
 
 \usepackage{fix-cm} % Large fonts
+
+%\ Chapter font:
+\usepackage{sectsty}
+%\chaptertitlefont{\large}
+%\allsectionsfont{\raggedright\small}
+\allsectionsfont{\centering\Large}
 
 \usepackage[hidelinks]{hyperref} % URLs
 
@@ -58,29 +66,11 @@
 \renewcommand\thechapter{\arabic{chapter}}
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 
-%% \fancyhf{}
-
 
 %% Remove section numbering, but leave in TOC:
 \setcounter{secnumdepth}{0}
 
 \begin{document}
-%%Title
-%\fancyhead[L]{If There's A God, HELP!} %%Header
-%\fancyfoot[L]{David A. Allan} %Footer
-%\rhead{}
-%\renewcommand{\footrulewidth}{1pt}
-%\fancyhead[R]{\thepage}
-%
-%%Fix headers on Table of Contents and List of Figures:
-%\fancypagestyle{plain}{
-%	\fancyhead{}
-%	\fancyfoot{}
-%	\fancyhead[L]{If There's a God, HELP!} %%Header
-%	\fancyfoot[L]{David A. Allan} %Footer
-%	\rhead{}
-%	\renewcommand{\footrulewidth}{1pt}
-%}
 
 \let\cleardoublepage\clearpage 
 \frontmatter
@@ -515,7 +505,7 @@ We again began to contemplate what the future looked like for us. There were so 
 
 
 % Chapter 8
-\chapter{Job's Trial on Our Farm}
+\chapter{Job's Trial On Our Farm}
 \
 
 Citizens of Canada and the US are blessed. The whole world envies us because we seem to live in the promised land with great prosperity; it is a land flowing with milk and honey. It is  interesting to read the Bible and see how God walked with His beloved people through the centuries. The Israelites were His chosen people; He loved and honored them above every nation of the world. He always had a plan to bless them far beyond what they could ask or think. Jesus, because of His plan of grace, opened the door for the Gentile nations to be grafted into the vine. Consequently, they were also blessed in every natural and spiritual way. We have an awesome and generous God; He doesn’t want us to lack anything. All He wants is for us to love and serve Him with all of our heart, soul, and strength. God will never fail to be an extravagant lover to each person who chooses Him as their God, Father, Master, and Lord. All He asks in return is that we love Him and partner with Him to fulfill His purposes. We each have a choice to determine where we will put our affections. Our free will choice contains both a blessing and a curse, depending whether we choose good or evil. This reality becomes a battle between our selfish will to choose to be in control or our unselfish will to be totally surrendered to God and His will. The result determines who we serve. Jesus made this choice very plain in Matthew 6:24, “No one can serve two masters. Either you will hate the one and love the other, or you will be devoted to the one and despise the other. You cannot serve both God and money.”

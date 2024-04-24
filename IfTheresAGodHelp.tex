@@ -67,47 +67,10 @@
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 
 
-% Update header size
-%\pagestyle{fancy}
-%\fancyhf{}
-%\fancyhead[C]{\nouppercase{\leftmark}} % Display chapter title in header
-%\fancyhead[R]{\thepage} % Display page number in header
-%\renewcommand{\headrulewidth}{0pt} % Remove header rule
-
-% Automatically change font size based on width
-%\usepackage{graphicx} % For \resizebox
-
-%% Custom header style to dynamically adjust font size
-%\fancyhead[C]{%
-%  \resizebox{\textwidth}{!}{%
-%    \begin{tabular}{@{}c@{}}
-%      \nouppercase{\leftmark} \\ % Chapter title
-%      \thepage % Page number
-%    \end{tabular}%
-%  }%
-%}
-
-
 %% Remove section numbering, but leave in TOC:
 \setcounter{secnumdepth}{0}
 
 \begin{document}
-%%Title
-%\fancyhead[L]{If There's A God, HELP!} %%Header
-%\fancyfoot[L]{David A. Allan} %Footer
-%\rhead{}
-%\renewcommand{\footrulewidth}{1pt}
-%\fancyhead[R]{\thepage}
-%
-%%Fix headers on Table of Contents and List of Figures:
-%\fancypagestyle{plain}{
-%	\fancyhead{}
-%	\fancyfoot{}
-%	\fancyhead[L]{If There's a God, HELP!} %%Header
-%	\fancyfoot[L]{David A. Allan} %Footer
-%	\rhead{}
-%	\renewcommand{\footrulewidth}{1pt}
-%}
 
 \let\cleardoublepage\clearpage 
 \frontmatter

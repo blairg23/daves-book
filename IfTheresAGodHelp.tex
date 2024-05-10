@@ -1,4 +1,4 @@
-\documentclass[twoside,12pt]{book}
+\documentclass[twoside, 12pt]{book}
 \usepackage{tocbibind}
 \usepackage{tocloft}
 \usepackage{lipsum}
@@ -6,25 +6,40 @@
 \usepackage{caption} %for captions outside of floats
 \usepackage{appendix}
 
-%\usepackage{savetrees}
-\usepackage{fancyhdr} %%For headers/footers\
-%\pagestyle{fancy} %%For fancy headers
-\usepackage{titlesec}
+%for headers/footers
+\usepackage{fancyhdr}
+% Define custom header style
+\fancyhf{} % Clear header and footer
+\fancyhead[LE]{\footnotesize {\leftmark}} % Chapter title on even pages (left)
+\fancyhead[RO]{\footnotesize {\rightmark}} % Section title on odd pages (right)
+\fancyfoot[C]{\thepage} % Page number in the center of footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underline
 
-%\renewcommand{\rmdefault}{phv} % Arial
-%\renewcommand{\sfdefault}{phv} % Arial
+% Apply the custom header style
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underline
+
+\usepackage{titlesec}
 
 % Load the parskip package without options
 \usepackage{parskip}
 
 % Spacing
-\usepackage[paperheight=8.5in,paperwidth=5.5in,heightrounded]{geometry}
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- }
+\usepackage[paperheight=8in,paperwidth=5in,heightrounded, left=0.5in, right=0.5in]{geometry}
+
+% Calculate the header offset to match the 0.5in margins
+\setlength{\headheight}{14pt} % Adjust headheight to avoid warnings
+\setlength{\headsep}{10pt} % Adjust headsep for vertical spacing
+
+% Set the header offsets for LE and RO
+\newlength{\headoffset}
+\setlength{\headoffset}{0.15in} % Margin width
+\addtolength{\headoffset}{-\headsep} % Adjust for headsep
+
+% Set the fancyheadoffset for LE and RO
+\fancyheadoffset[LE]{\headoffset}
+\fancyheadoffset[RO]{\headoffset}
 
 % Indent paragraphs
 \setlength{\parindent}{20pt}
@@ -36,8 +51,6 @@
 
 %\ Chapter font:
 \usepackage{sectsty}
-%\chaptertitlefont{\large}
-%\allsectionsfont{\raggedright\small}
 \allsectionsfont{\centering\Large}
 
 \usepackage[hidelinks]{hyperref} % URLs
@@ -75,15 +88,15 @@
 \let\cleardoublepage\clearpage 
 \frontmatter
 \title{
-	\fontsize{72}{86.4}\selectfont If There's a God, HELP!\\
-	\textit{\fontsize{24}{28.8}\selectfont Facing Trials with God}
+	\fontsize{48}{57.6}\selectfont If There's a God, HELP!\\
+	\textit{\fontsize{16}{19.2}\selectfont Facing Trials with God}
 }
 \author{\fontsize{24}{28.8}\selectfont David A. Allan}
 \date{}
 \maketitle
-\large
-\chapter{IMPORTANT NOTE}
-I have donated this book to the church where we serve in Mexico; however, we are charging a minimal fee for translating and printing costs. If this book has impacted you personally, I am asking for donations to be sent to La Fuente Riviera at the addresses below. They will provide a tax-deductible receipt for any amount over \$25.00 (however, they will gladly accept any donation amount). For online giving go to Paypal (US). You could also personally give me contributions and I will make sure it gets to La Fuente (make checks out to La Fuente Riviera). Thank you for any help you can give this ministry!!\\
+
+\chapter*{IMPORTANT NOTE}
+I have donated this book to the church where we serve in Mexico; however, we are charging a minimal fee for translating and printing costs. If this book has impacted you personally, I am asking for donations to be sent to La Fuente Riviera at the addresses below. They will provide a tax-deductible receipt for any amount over \$25.00 (however, they will gladly accept any donation amount). For online giving go to Paypal (US). You could also personally give me contributions and I will make sure it gets to La Fuente (make checks out to La Fuente Riviera). Thank you for any help you can give this ministry!\\
 
 \begin{center}
 \underline{\textbf{In the United States}}\\
@@ -91,6 +104,8 @@ LaFuente Riviera\\
 10924 Oro Vista Avenue\\
 Sunland, CA. 91040-2025\\
 \
+
+\clearpage
 
 \underline{\textbf{In Canada}}\\
 La Fuente Ministries\\
@@ -103,20 +118,43 @@ Include a note that these funds are for LaFuente Riviera.\\
 (If you do not need the tax benefits of Canadian giving, you can use PayPal in the USA for easier giving.)\\
 \
 
-\textbf{All material sole property of David A. Allan and La Fuente Riviera. This work is copyrighted and protected, effective March 2024.} \\
-
 \end{center}
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit \href{https://creativecommons.org/licenses/by-nc-nd/4.0//}{https://creativecommons.org/licenses/by-nc-nd/4.0/} or send a letter to \\Creative Commons, P.O. Box 1866, Mountain View, CA. 94042, USA.
+We are also indebted to our home church, Hope Church in Kalispell, Montana, USA for their encouragement and prayers. They faithfully send mission teams to La Fuente and have been a blessing to the church in Mexico. Please consider supporting them in this endeavor as well.\\
+\
 
-\chapter{Acknowledgements}
+\begin{center}
+Hope Church\\
+436 Birch Grove Rd\\
+Kalispell, MT  59901\\
+\
+\end{center}
+
+\clearpage 
+
+\textbf{All material sole property of David A. Allan and La Fuente Riviera. This work is copyrighted and protected, effective March 2024.} \\
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit\\ \href{https://creativecommons.org/licenses/by-nc-nd/4.0//}{https://creativecommons.org/licenses/by-nc-nd/4.0/} or send a letter to \\
+\
+
+\begin{center}
+Creative Commons\\
+P.O. Box 1866\\
+Mountain View, CA. 94042, USA.\\
+\
+\end{center}
+
+\chapter*{Acknowledgements}
 I want, first of all, to give credit to God for all His miracles in my life. If it weren’t for Him, I would not be here telling my story. Secondly, I wish to acknowledge my wife, Connie, who with abundant patience, proofread and edited this book. Her son, Blair, also spent time using his technological skills to standardize the presentation and give it a professional touch. And, of course, I could not leave out my parents, who were great Godly role models throughout my life. Family and close friends have made a great difference as they walked with us through the heartaches and trials. I am grateful to all of you!\\
 \
+
+\clearpage
 
 \textbf{UPDATE:}
 Since I wrote this book about ten years ago, it has been translated into Spanish. I cannot leave out acknowledgements to a new group of people. Paolina Trinidad and Jennifer Hudson have done an excellent job of spearheading this project. Jennifer’s husband, Ed Hudson, designed the book cover and Eve Casillas used her expertise to proofread and help with the translation.\\
 
 \clearpage
+
 \tableofcontents
 \clearpage
 \mainmatter
@@ -1337,15 +1375,17 @@ During this time, God gave me Psalm 71 (I was 71 years old at the time) and spok
 
 The intention of this book is to inspire others to walk with God and to put Him first, in the good and bad times of life. I have currently had 64 brain strokes and am on my ninth life. But God continues to be faithful and I am alive to tell of His goodness!
 \
+\clearpage
 
+\begin{center}
 \large
 \thispagestyle{plain}
 %For creating an image with a caption:
 \begin{minipage}{\linewidth}
 		\makebox[\linewidth]{%
 		\centering
-		\includegraphics[scale=.75]{images/01.jpg}}
-		\captionsetup{font=large}
+		\includegraphics[scale=.5]{images/01.jpg}}
+		\captionsetup{font=normalsize}
 		\captionof*{figure}{I am preaching again at La Fuente in Mexico, accompanied by a translator, 2024.}
 \end{minipage}\\
 
@@ -1354,8 +1394,8 @@ The intention of this book is to inspire others to walk with God and to put Him 
 \begin{minipage}{\linewidth}
 		\makebox[\linewidth]{%
 		\centering
-		\includegraphics[scale=.2]{images/02.jpg}}
-		\captionsetup{font=large}
+		\includegraphics[scale=.1]{images/02.jpg}}
+		\captionsetup{font=normalsize}
 		\captionof*{figure}{This is the final airplane of five that I owned. It is the Piper Aerostar pressurized twin engine aircraft that I bought for \$99,000, and flew for more than 320,000 km before I sold it for \$240,000. }
 \end{minipage}\\
 \clearpage
@@ -1364,8 +1404,8 @@ The intention of this book is to inspire others to walk with God and to put Him 
 \begin{minipage}{\linewidth}
 		\makebox[\linewidth]{%
 		\centering
-		\includegraphics[scale=.2]{images/03.jpg}}
-		\captionsetup{font=large}
+		\includegraphics[scale=.1]{images/03.jpg}}
+		\captionsetup{font=normalsize}
 		\captionof*{figure}{This is the cockpit of my Aerostar. I spent many hours flying through all kinds of weather into Canada, the U.S., and the High Arctic in this seat.}
 \end{minipage}\\
 \clearpage
@@ -1374,10 +1414,13 @@ The intention of this book is to inspire others to walk with God and to put Him 
 \begin{minipage}{\linewidth}
 		\makebox[\linewidth]{%
 		\centering
-		\includegraphics[scale=.2]{images/04.jpg}}
-		\captionsetup{font=large}
+		\includegraphics[scale=.15]{images/04.jpg}}
+		\captionsetup{font=normalsize}
 		\captionof*{figure}{Bacon Acres, the farm where I raised over 40,000 pigs a year. The barn on the right was the one where there was a fire.}
 \end{minipage}\\
+
+\end{center}
+
 \clearpage
 
 \section{Some Testimonies from the Encounters Ministry}

@@ -23,6 +23,9 @@
 % Apply the custom header style
 \pagestyle{fancy}
 
+% Prevent hyphens:
+\raggedright
+
 \renewcommand{\headrulewidth}{0pt} % Remove header underline
 
 \usepackage{titlesec}
@@ -31,7 +34,7 @@
 \usepackage{parskip}
 
 % Spacing
-\usepackage[paperheight=8in,paperwidth=5in,heightrounded, left=0.5in, right=0.5in]{geometry}
+\usepackage[paperheight=8in,paperwidth=5in,heightrounded, inner=0.75in, outer=0.5in]{geometry}
 
 % Calculate the header offset to match the 0.5in margins
 \setlength{\headheight}{14pt} % Adjust headheight to avoid warnings
